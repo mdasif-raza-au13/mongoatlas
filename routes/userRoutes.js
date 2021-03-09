@@ -29,7 +29,7 @@ router.post('/adduser', (req,res) => {
     })
 })
 
-router.patch('/updateuser', (req,res) => {
+router.put('/updateuser', (req,res) => {
     const id = req.body._id;
     let updateData = {
         name: req.body.name,
